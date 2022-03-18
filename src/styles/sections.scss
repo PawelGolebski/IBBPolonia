@@ -1,20 +1,5 @@
 @import "variables.scss";
-.games {
-    height: 856px;
-    position: relative;
-    top: 0;
-    left: 0;
-    background-color: #FFF;
-    z-index: -2;
-    &__background {
-        position: absolute;
-        height: 700px;
-        width: 850px;
-        top: -100px;
-        left: -450px;
-        z-index: -1;
-    }
-}
+
 
 .club {
     width: 100%;
