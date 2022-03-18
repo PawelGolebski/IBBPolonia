@@ -269,15 +269,20 @@ th, td{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        p{
+            padding-top: 0.7rem;
+        }
         
     }
     &__polsat{
         width: 2.1rem;
         height: 3rem;
+        
     }
     &__bbcSport{
         width: 5.9rem;
         height: 1rem;
+        padding-top: 0.7rem;
     }
 }
 
