@@ -1,0 +1,369 @@
+@import "variables.scss";
+.games {
+    height: 856px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    z-index: -2;
+    &__background {
+        position: absolute;
+        height: 700px;
+        width: 850px;
+        top: -100px;
+        left: -450px;
+        z-index: -1;
+    }
+}
+
+.club {
+    width: 100%;
+    height: 34rem;
+    background-image: url("https://drive.google.com/uc?id=1K50QJWTVxdq94ztEeQNEvFMmOayALpVj");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.achievements {
+    width: 100%;
+    height: 56rem;
+    background-color: $color-grey;
+}
+
+.team {
+    width: 100%;
+    height: 38rem;
+    background-color: #FFF;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    &__background {
+        position: absolute;
+        height: 700px;
+        width: 850px;
+        top: -120px;
+        right: -500px;
+        z-index: -1;
+    }
+    &__backgroundLogo {
+        height: 38rem;
+        width: 38rem;
+        position: absolute;
+        top: 16.5rem;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+.news {
+    width: 100%;
+    min-height: 144rem;
+    background-color: #FFF;
+    &__header {
+        height: 200px;
+        width: 100%;
+        background-position: right;
+        background-size: contain;
+        background-image: url("https://drive.google.com/uc?id=104Yu9Wv9t1WZewDZuHC5YnD8Btc7AtVn");
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            h2 {
+                font-family: $font-family;
+                font-size: 2.5rem;
+                line-height: 5rem;
+                font-weight: 300;
+                text-transform: capitalize;
+                color: #FFF;
+                margin-top: 1rem;
+            }
+            h2::first-letter {
+                font-size: 3.75rem;
+            }
+            a {
+                text-decoration: none;
+                font-family: $font-family;
+                font-size: 1rem;
+                line-height: 21px;
+                color: $color-accent;
+                margin-top: 2.8rem;
+            }
+        }
+    }
+}
+
+.shop {
+    width: 100%;
+    min-height: 90rem;
+    &__header {
+        position: relative;
+        width: 100%;
+        height: 35rem;
+        background-image: url("https://drive.google.com/uc?id=19OdoIUGkJaSxNv6yH5SajPNEJra-OslY");
+        h1 {
+            // mix-blend-mode
+            // color: transparent;
+            // color: rgba(0, 0, 0, 0.9);
+            font-family: $font-family;
+            font-size: 7.6rem;
+            font-weight: 700;
+            line-height: 10rem;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 0 #FFF, 2px -2px 0 #FFF, -2px 2px 0 #FFF, -2px -2px 0 #FFF, 2px 0px 0 #FFF, 0px 2px 0 #FFF, -2px 0px 0 #FFF, 0px -2px 0 #FFF;
+            position: absolute;
+            bottom: 2.8rem;
+            left: 41.5rem;
+        }
+    }
+    &__homeJersey {
+        width: 38.5rem;
+        height: 38.5rem;
+        position: absolute;
+        bottom: -1rem;
+        left: -5rem;
+    }
+    &__awayJersey {
+        width: 37rem;
+        height: 37rem;
+        position: absolute;
+        bottom: -3.2rem;
+        left: 7.4rem;
+    }
+    &__clubLogo {
+        height: 18rem;
+        width: 18rem;
+        position: absolute;
+        top: 2.7rem;
+        left: 67.5rem;
+    }
+    &__info {
+        width: 100%;
+        height: 6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: $font-family;
+        margin-top: 1.8rem;
+    }
+    &__title {
+        font-size: 2.5rem;
+        font-weight: 300;
+        color: $color-buttons;
+        text-transform: uppercase;
+        &::first-letter {
+            font-size: 3.75rem;
+        }
+    }
+    a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: $color-accent;
+        line-height: 1, 3rem;
+    }
+}
+
+.sponsors {
+    .container {
+        width: 100%;
+        max-width: 1700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__row-1 {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    &__row-2 {
+        margin-bottom: 4rem;
+    }
+    &__mainSponsor {
+        width: 514px;
+        height: 185px;
+        position: relative;
+        // top: 50px;
+    }
+    &__mainSponsor::after {
+        content: 'Sponsor główny';
+        height: 21px;
+        display: block;
+        position: absolute;
+        line-height: 21;
+        font-family: $font-family;
+        font-size: 1rem;
+        font-weight: 700;
+        top: -140px;
+        left: 260px;
+    }
+}
+
+.newsletter {
+    position: relative;
+    background-color: $color-background;
+    color: #FFF;
+    width: 100%;
+    height: 4.75rem;
+    font-family: 'roboto', sans-serif;
+    border-bottom: 1.5px solid #707070;
+    .container {
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text {
+        font-size: 1.4rem;
+        margin-right: 1.8rem;
+    }
+    &__emailInput {
+        width: 370px;
+        height: 44px;
+        color: #000;
+        padding-left: 1.2rem;
+        font-size: 1.2rem;
+        &::placeholder {
+            font-size: 0.9rem;
+            color: #838F91;
+        }
+    }
+    &__emailLabel {
+        position: absolute;
+        left: -99999px;
+    }
+    &__checkbox {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        &:checked+span {
+            background-color: $color-buttons;
+        }
+    }
+    &__checkmark {
+        // position: absolute;
+        height: 1.2rem;
+        width: 1.2rem;
+        border: 0.3rem solid #FFF;
+        border-radius: 3px;
+        background-color: #FFF;
+        cursor: pointer;
+    }
+    &__checkboxLabel {
+        cursor: pointer;
+        width: 27.5rem;
+        height: 3rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        p {
+            font-size: 0.8rem;
+            margin-left: 1rem;
+        }
+        a {
+            font-size: 0.8rem;
+            margin-left: 0.2rem;
+            color: $color-buttons;
+            position: relative;
+            &::after {
+                content: "*";
+                display: block;
+                width: 1.5rem;
+                height: 1.5rem;
+                color: red;
+                position: absolute;
+                top: 0;
+                right: -1.6rem;
+            }
+        }
+    }
+    &__button {
+        width: 16rem;
+        height: 2.75rem;
+        color: #FFF;
+        background-color: $color-accent;
+        border: none;
+        border-radius: 0.2rem;
+        cursor: pointer;
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 23.5rem;
+    background-color: $color-background;
+    position: relative;
+    &::after {
+        content: 'Copyright © IBB Polonia London VC 2021';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        display: block;
+        width: 16rem;
+        height: 1.2rem;
+        color: white;
+        font-family: 'roboto', sans-serif;
+        font-size: 0.8rem;
+    }
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__logoWrapper {
+        width: 15.7rem;
+        height: 15.7rem;
+        margin-top: 2.1rem;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__column {
+        min-width: 5.5rem;
+        height: 15.7rem;
+        margin-top: 3.3rem;
+        font-family: 'roboto', sans-serif;
+        &:last-child p {
+            font-size: 1rem;
+            &:nth-child(2) {
+                color: $color-accent;
+                margin-bottom: 0.4rem;
+            }
+            &:nth-child(4) {
+                color: $color-accent;
+                margin-bottom: 0.4rem;
+            }
+            &:nth-child(6) {
+                font-size: 1.4rem;
+                font-weight: 700;
+                margin-top: 3rem;
+            }
+        }
+        h3 {
+            color: $color-accent;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        p {
+            color: #FFF;
+            font-size: 0.85rem;
+            margin-bottom: 1.2rem;
+            &:nth-child(2) {
+                margin-top: 2rem;
+            }
+        }
+    }
+}
