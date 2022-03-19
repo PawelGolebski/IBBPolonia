@@ -7,6 +7,7 @@ import Hero from './js/hero/Hero'
 import Games from './js/games/Games'
 import Club from './js/club/Club'
 import Achievements from './js/achievements/Achievements'
+import Team from './js/team/Team'
 
 const App = () => {
     return <>
@@ -15,6 +16,7 @@ const App = () => {
     <Games/>
     <Club />
     <Achievements/>
+    <Team/>
     </>
 }
 
