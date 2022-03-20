@@ -8,6 +8,9 @@ import Games from './js/games/Games'
 import Club from './js/club/Club'
 import Achievements from './js/achievements/Achievements'
 import Team from './js/team/Team'
+import News from './js/news/News'
+
+
 
 const App = () => {
     return <>
@@ -17,6 +20,7 @@ const App = () => {
     <Club />
     <Achievements/>
     <Team/>
+    <News/>
     </>
 }
 
