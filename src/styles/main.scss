@@ -7,6 +7,8 @@
 @import "achievements.scss";
 @import "team.scss";
 @import "news.scss";
+@import "media.scss";
+@import "tv.scss";
 @import "sections.scss";
 * {
     box-sizing: border-box;
@@ -14,5 +16,22 @@
 
 body {
     max-width: 1920px;
+}
+
+.container{
+    width: 90%;
+}
+
+
+@media (max-width: 1800px){
+    html{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1600px){
+    html{
+        font-size: 12px;
+    }
 }
 

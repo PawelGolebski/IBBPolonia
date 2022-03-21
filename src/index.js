@@ -9,6 +9,8 @@ import Club from './js/club/Club'
 import Achievements from './js/achievements/Achievements'
 import Team from './js/team/Team'
 import News from './js/news/News'
+import Media from './js/media/Media'
+import Tv from './js/tv/Tv'
 
 
 
@@ -21,6 +23,8 @@ const App = () => {
     <Achievements/>
     <Team/>
     <News/>
+    <Media />
+    <Tv/>
     </>
 }
 
