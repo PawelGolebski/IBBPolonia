@@ -7,7 +7,7 @@
     left: 0;
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(249,249,249,1) 100%);
-    z-index: -2;
+    
     .container{
         position: relative;
     }
@@ -23,11 +23,12 @@
         width: 100%;
         height: 16.5rem;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-flow: row wrap;
+        justify-content: flex-start;
         align-items: center;
-        // transform: translate(0, -35%);
-        z-index: 200;
+        gap: 1.5rem;
+        transform: translate(0, -15%);
+        z-index: 10;
         
         
     }
@@ -41,7 +42,6 @@
         background-color: #FFF;
         box-shadow: 0px 16px 21px -6px rgba(177, 177, 177, 1);
         font-family: $font-family;
-        z-index:200;
     }
 
     &__nextGame{
@@ -56,7 +56,7 @@
 
 .card{
     &__title{
-        color: $color-accent;
+        color: $color-primary;
         font-weight: 700;
         font-size: 1.125rem;
         margin-top: 1rem;
@@ -82,7 +82,7 @@
             display: block;
             width: 3.2rem;
             height: 0.2rem;
-            background-color: $color-buttons;
+            background-color: $color-secondary;
             position: absolute;
             top: 1.3rem;
             left: 50%;
@@ -188,12 +188,20 @@ th, td{
         font-size: 0.9rem;
         color: $color-grey;
     }
+
+    &__cardsWrapper{
+        width: 49%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1.5rem
+    }
 }
 
 .result__poloniaSets,
 .result__oponentSets{
     font-size: 4.4rem;
-    color: $color-buttons;
+    color: $color-secondary;
 }
 
 
@@ -223,7 +231,7 @@ th, td{
     &__title{
         font-size: 2.5rem;
         font-weight: 300;
-        color: $color-buttons;
+        color: $color-secondary;
         text-transform: uppercase;
         line-height: 5rem;
         margin-bottom: 1.9rem;
@@ -248,7 +256,7 @@ th, td{
         height: 2.7rem;
         text-decoration: none;
         color: #FFF;
-        background-color: $color-buttons;
+        background-color: $color-secondary;
         margin-bottom: 1.5rem;
         padding-top: calc(1.35rem - 21px / 2);
         text-align: center;
@@ -259,7 +267,7 @@ th, td{
         height: 2.7rem;
         text-decoration: none;
         color: #FFF;
-        background-color: $color-accent;
+        background-color: $color-primary;
         margin-bottom: 2.2rem;
         padding-top: calc(1.35rem - 21px / 2);
         text-align: center;
@@ -322,7 +330,7 @@ th, td{
         margin-bottom: 1rem;
     }
     &__oponent{
-        color: $color-accent;
+        color: $color-primary;
         font-weight: 600;
         font-size: 1.9rem;
         margin-bottom: 1.9rem;

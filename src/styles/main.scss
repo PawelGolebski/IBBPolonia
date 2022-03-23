@@ -1,5 +1,6 @@
 @import "reset.scss";
 @import "variables.scss";
+@import "generic.scss";
 @import "header.scss";
 @import "hero.scss";
 @import "games.scss";
@@ -23,15 +24,15 @@ body {
 }
 
 
-@media (max-width: 1800px){
-    html{
-        font-size: 14px;
-    }
-}
+// @media (max-width: 1800px){
+//     html{
+//         font-size: 14px;
+//     }
+// }
 
-@media (max-width: 1600px){
-    html{
-        font-size: 12px;
-    }
-}
+// @media (max-width: 1600px){
+//     html{
+//         font-size: 12px;
+//     }
+// }
 

@@ -29,5 +29,5 @@ const App = () => {
 }
 
 
-ReactDOM.render(<App/>,document.getElementById("test"));
+ReactDOM.render(<App/>,document.getElementById("root"));
 

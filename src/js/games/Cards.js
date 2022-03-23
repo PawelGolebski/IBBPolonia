@@ -7,10 +7,17 @@ import CardLastGame from "./CardLastGame";
 
 const Cards = () => {
     return <div className="games__cards">
-        <CardShares/>
-        <CardAdv/>
-        <CardTable/>
-        <CardLastGame/>
+        
+        <div className="lastGame__cardsWrapper">
+            <CardShares/>
+            <CardAdv/>
+        </div>
+        
+        <div className="lastGame__cardsWrapper">
+            <CardTable/>
+            <CardLastGame/>
+        </div>
+        
     </div>
 }
 

@@ -1,7 +1,4 @@
-.container {
-    margin: 0 auto;
-    max-width: 1700px;
-}
+
 
 .header {
     z-index: 100;
@@ -84,7 +81,7 @@
         // z-index: 200;
     }
     &__searchIcon {
-        color: $color-accent;
+        color: $color-primary;
     }
 }
 
@@ -94,7 +91,7 @@
     &__twitter,
     &__youtube,
     &__linkedIn {
-        color: $color-accent;
+        color: $color-primary;
         padding-left: 1rem;
     }
     
@@ -140,7 +137,7 @@
         }
     }
     &__emailIcon {
-        color: $color-accent;
+        color: $color-primary;
     }
     &__locationIcon {
         // color: $color-accent;

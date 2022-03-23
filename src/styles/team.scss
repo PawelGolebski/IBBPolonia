@@ -31,7 +31,7 @@
     &__title{
         font-size: 2.5rem;
         font-weight: 300;
-        color: $color-buttons;
+        color: $color-secondary;
         line-height: 5rem;
         text-transform: uppercase;
         &::first-letter{
@@ -87,7 +87,7 @@
     &__lastName{
         font-size: 6.25rem;
         font-weight: 700;
-        color: $color-accent;
+        color: $color-primary;
     }
     &__image{
         width: 25.5rem;
@@ -119,7 +119,7 @@
         align-items: flex-start;
         flex-wrap: wrap;
         gap: 1rem;
-        color: $color-buttons;
+        color: $color-secondary;
         align-self: flex-end;
     }
     &__buttons{

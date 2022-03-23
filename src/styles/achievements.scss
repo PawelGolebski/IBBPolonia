@@ -28,7 +28,7 @@
             line-height: 5rem;
             margin-top: 1.1rem;
             margin-left: 2.1rem;
-            color: $color-buttons;
+            color: $color-secondary;
             text-transform: uppercase;
             &::first-letter{
                 font-size: 3.75rem;
@@ -81,7 +81,7 @@
             font-weight: 300;
             line-height: 5rem;
             text-transform: uppercase;
-            color: $color-buttons;
+            color: $color-secondary;
             margin-top: 1.1rem;
             &::first-letter{
                 font-size: 3.75rem;
@@ -106,7 +106,7 @@
             font-size: 0.75rem;
             display: block;
             width: 25rem;
-            color: $color-accent;
+            color: $color-primary;
             margin-top: 1.4rem;
         }
         &__quote{

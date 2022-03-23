@@ -9,9 +9,9 @@ import backgroundImage from "../../../assets/backgroundImage.png"
 const Team = () => {
     return <section class="team">
         <img src={ backgroundLogo } alt="background club logo" class="team__backgroundLogo"/>
-        <div class="team__background">
+        {/* <div class="team__background">
             <img src={ backgroundImage } alt="background layer"/>
-        </div>
+        </div> */}
         <div class="container">
             <TeamIntro/>
             <TeamPlayer/>

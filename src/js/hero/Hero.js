@@ -12,16 +12,16 @@ const Hero = () => {
             <h1 className="textBox__headline">Poznaj Mistrzów
                 <p className="headline__teamName">IBB Polonia VC</p>
             </h1>
-            <p className="textBox__description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit officia accusantium nisi ut a aliquid hic consequatur exercitationem enim blanditiis, reprehenderit autem fugiat maxime amet quasi doloribus. Aliquam, optio? Minima excepturi
-                repudiandae cum neque soluta hic, molestias mollitia blanditiis.</p>
-        </div>
-        <div className="hero__image">
-            <img src={ heroPlayer } alt="Player image"/>
+            <p className="textBox__description"> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sit officia accusantium nisi ut a aliquid hic consequatur exercitationem enim blanditiis, reprehenderit autem fugiat maxime amet quasi doloribus. Aliquam, optio? Minima excepturi
+                repudiandae cum neque soluta hic, molestias mollitia blanditiis.
+            </p>
+            
         </div>
     </div>
-    <div className="hero__background">
-        <img src={ backgroundImage } alt="background layer"/>
-    </div>
+    <div className="hero__image"> </div>
+
+    {/* <div className="hero__background"></div> */}
 </section>
 }
 

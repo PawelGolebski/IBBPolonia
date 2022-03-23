@@ -12,7 +12,7 @@ const CardLastGame = () => {
             PON. 03.08
         </p> */}
         <LastGameResult/>
-        <a className="card__button">
+        <a href="#" className="card__button">
             Szczegóły spotkania
         </a>
     </div>
