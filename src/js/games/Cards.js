@@ -6,7 +6,8 @@ import CardLastGame from "./CardLastGame";
 
 
 const Cards = () => {
-    return <div className="games__cards">
+    return <>
+    <div className="games__cards">
         
         <div className="lastGame__cardsWrapper">
             <CardShares/>
@@ -18,7 +19,13 @@ const Cards = () => {
             <CardLastGame/>
         </div>
         
+        
     </div>
-}
+    <h2 className="nextGame__title">
+    następny mecz
+    </h2>
+    </>
+}   
+    
 
 export default Cards

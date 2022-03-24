@@ -7,8 +7,10 @@ import NextGameInfo from "./NextGameInfo";
 
 const NextGame = () => {
     return <div className="games__nextGame">
-        <NextGameLinks/>
-        <NextGameInfo/>
+        
+            <NextGameLinks/>
+            <NextGameInfo/>
+        
     </div>
 }
 

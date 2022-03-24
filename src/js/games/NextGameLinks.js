@@ -6,9 +6,7 @@ import bbcIcon from '../../../assets/bbcIcon.png'
 
 const NextGameLinks = () => {
     return <div className="nextGame__links">
-        <h2 className="links__title">
-            następny mecz
-        </h2>
+        
         <a href="#" className="links__timetableButton">
             Sprawdź terminarz rozgrywek
         </a>
