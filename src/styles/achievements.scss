@@ -7,7 +7,7 @@
     position: relative;
 
     &Slider{
-        width: 54rem;
+        width: 45%;
         height: 25rem;
         background-color: #FFF;
         display: flex;
@@ -20,7 +20,7 @@
         font-family: $font-family;
         position: absolute;
         top: 18.5rem;
-        left: 8.7rem;
+        left: 3%;
 
         &__title{
             font-size: 2.5rem;
@@ -36,24 +36,49 @@
         }
 
         &__img{
-            width: 46rem;
+            width: 80%;
             height: 14.6rem;
-            margin-left: 3.75rem;
+            margin-left: 8%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
         }
 
         &__buttons{
-            width: 6.9rem;
-            height: 2.7rem;
-            margin-left: 22.6rem;
+            // width: 6.9rem;
+            height: 4rem;
+            margin-left: 37%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+        }
+        &__buttonRight{
+            display: block;
+            width: 4rem;
+            height: 4rem;
+            cursor: pointer;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__buttonLeft{
+            display: block;
+            width: 4rem;
+            height: 4rem;
+            cursor: pointer;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 
     &__card{
         width: 50.6rem;
-        height: 25rem;
+        // height: 25rem;
         background-color: $color-background;
         display: flex;
         flex-direction: column;
@@ -66,20 +91,22 @@
 
     &Card{
         &__wrapper{
-            width: 56.3rem;
-            height: 25rem;
+            width: 50%;
+            // height: 25rem;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
             position: absolute;
             top: 15.4rem;
-            left: 60.75rem;
+            left: 46%;
+            // left: 0;
         }
         &__title{
+            width: 60%;
             font-size: 2.5rem;
             font-weight: 300;
-            line-height: 5rem;
+            line-height: 4rem;
             text-transform: uppercase;
             color: $color-secondary;
             margin-top: 1.1rem;
@@ -88,6 +115,7 @@
             }
         }
         &__player{
+            width: 60%;
             font-size: 2.5rem;
             font-weight: 600;
             text-transform: uppercase;
@@ -96,36 +124,66 @@
             margin-top: 0.6rem;
         }
         &__playerImg{
-            width: 20rem;
-            height: 35rem;
+            // width: 18.75rem;
+            // height: 100%;
+            // height: 35rem;
             position: absolute;
-            bottom: 0.32rem;
-            left: 33rem;
+            bottom: 0;
+            left: 63%;
+            display: flex;
+            align-items: flex-end;
+            img{
+                max-width: 100%;
+                height: auto;
+            }
         }
         &__description{
             font-size: 0.75rem;
             display: block;
-            width: 25rem;
+            width: 60%;
             color: $color-primary;
             margin-top: 1.4rem;
         }
         &__quote{
             display: block;
-            width: 25rem;
+            width: 60%;
             font-weight: 300;
             color: #FFF;
             line-height: 1.6rem;
             font-style: italic;
             margin-top: 1.5rem;
+            margin-bottom: 2.1rem;
         }
         &__buttons{
             width: 2.7rem;
             height: 7.4rem;
+            padding-left: 10%;   
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            z-index: 10;
         }
-        
+        &__buttonRight{
+            display: block;
+            width: 4rem;
+            height: 4rem;
+            cursor: pointer;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__buttonLeft{
+            display: block;
+            width: 4rem;
+            height: 4rem;
+            cursor: pointer;
+            
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 }

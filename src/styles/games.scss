@@ -20,6 +20,16 @@
         left: -450px;
         // z-index: -1;
     }
+    &__cardsWrapper{
+        width: 50%;
+        min-width: 40rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+        margin-bottom: 3rem;
+    //     flex-shrink: 0;
+    }
     &__cards{
         width: 100%;
         // height: 16.5rem;
@@ -33,7 +43,9 @@
         
         
         
+        
     }
+
     &__card{
         width: 48%;
         height: 16.5rem;
@@ -209,14 +221,7 @@ th, td{
         color: $color-grey;
     }
 
-    &__cardsWrapper{
-        width: 39rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2%;
-        margin-bottom: 3rem;
-    }
+    
 }
 
 .result__poloniaSets,

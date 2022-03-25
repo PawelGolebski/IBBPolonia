@@ -9,12 +9,12 @@ const Cards = () => {
     return <>
     <div className="games__cards">
         
-        <div className="lastGame__cardsWrapper">
+        <div className="games__cardsWrapper">
             <CardShares/>
             <CardAdv/>
         </div>
         
-        <div className="lastGame__cardsWrapper">
+        <div className="games__cardsWrapper">
             <CardTable/>
             <CardLastGame/>
         </div>
