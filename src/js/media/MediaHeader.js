@@ -12,18 +12,24 @@ const MediaHeader = () => {
             Nasze social media
         </h2>
         <div className="mediaHeader__buttons">
-            <a>
-                <img src={ instagram } alt="go to our instagram"/>
-            </a>
-            <a>
-                <img src={ facebook } alt="go to our facebook"/>
-            </a>
-            <a>
-                <img src={ twitter } alt="go to our twitter"/>
-            </a>
-            <a>
-                <img src={ youtube } alt="go to our youtube"/>
-            </a>
+            <div className="mediaHeader__buttonsWraper">
+                <a href="#" className="mediaHeader__button">
+                    <img src={ instagram } alt="go to our instagram"/>
+                </a>
+                <a href="#" className="mediaHeader__button">
+                    <img src={ facebook } alt="go to our facebook"/>
+                </a>
+            </div>
+            
+            <div className="mediaHeader__buttonsWraper">
+                <a href="#" className="mediaHeader__button">
+                    <img src={ twitter } alt="go to our twitter"/>
+                </a>
+                <a href="#" className="mediaHeader__button">
+                    <img src={ youtube } alt="go to our youtube"/>
+                </a>
+            </div>
+            
         </div>
     </header>
 }

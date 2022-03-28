@@ -36,10 +36,16 @@ const description4 = "Cras varius tellus eu dignissim bibendum. Cras tincidunt b
 
 const NewsCards = () => {
     return <div className="news__cards">
-        <NewsCard img={ img1 } date= {date1 } category= {category1 } title= {title1 } description= {description1 } />
-        <NewsCard img={ img2 } date= {date2 } category= {category2 } title= {title2 } description= {description2 } />
-        <NewsCard img={ img3 } date= {date3 } category= {category3 } title= {title3 } description= {description3 } />
-        <NewsCard img={ img4 } date= {date4 } category= {category4 } title= {title4 } description= {description4 } />
+        <div className="news__cardsWrapper">
+            <NewsCard img={ img1 } date= {date1 } category= {category1 } title= {title1 } description= {description1 } />
+            <NewsCard img={ img2 } date= {date2 } category= {category2 } title= {title2 } description= {description2 } />
+        </div>
+        <div className="news__cardsWrapper">
+            <NewsCard img={ img3 } date= {date3 } category= {category3 } title= {title3 } description= {description3 } />
+            <NewsCard img={ img4 } date= {date4 } category= {category4 } title= {title4 } description= {description4 } />
+        </div>
+        
+        
     </div>
 }
 
