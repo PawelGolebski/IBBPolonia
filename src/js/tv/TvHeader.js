@@ -8,7 +8,7 @@ const TvHeader = () => {
         <h2 className="tvHeader__title">
             Telewizja IBB Polonia
         </h2>
-        <a className="tvHeader__link">
+        <a href="#" className="tvHeader__link">
             Sprawdź naszą telewizję
         </a>
     </header>

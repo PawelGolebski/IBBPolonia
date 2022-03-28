@@ -54,20 +54,21 @@
         }
     }
     &__windowsWrapper{
-        width: 1920px;
+        
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 3rem;
     }
     &__bigWindow{
     width: 50.625rem;
     height: 29.75rem;
-    margin-right: 5rem;
+    // margin-right: 5rem;
     }
     &__smallWindows{
        
         width: 50.625rem;
-        height: 29.75rem;
+        height: 29em;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -85,7 +86,7 @@
         margin-bottom: 4rem;
         img{
             width: 100%;
-            height: 100%;
+            height: auto;
         }
     }
 }
