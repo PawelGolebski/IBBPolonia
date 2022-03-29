@@ -11,6 +11,7 @@ import Team from './js/team/Team'
 import News from './js/news/News'
 import Media from './js/media/Media'
 import Tv from './js/tv/Tv'
+import Shop from './js/shop/Shop'
 
 
 
@@ -25,6 +26,7 @@ const App = () => {
     <News/>
     <Media />
     <Tv/>
+    <Shop />
     </>
 }
 
