@@ -5,7 +5,7 @@ import pinIcon from "../../../assets/pinIcon.png"
 
 const HeaderContacts = () => {
     return <div className="header__contacts">
-        <div class="contact__phoneIcon">
+        <div className="contact__phoneIcon">
             <img src={ phoneIcon } alt="phone number"/>
         </div>
         <p className="contacts__phoneNumber">+44 123 123 123</p>

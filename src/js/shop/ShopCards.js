@@ -8,8 +8,8 @@ import shopProduct2 from "../../../assets/shopProduct2.png";
 
 const ShopCards = () => {
     return <div className="container">
-        <div class="shop__info">
-            <p class="shop__title">sklep klubowy</p>
+        <div className="shop__info">
+            <p className="shop__title">sklep klubowy</p>
             <a href="#">Otwórz sklep</a>
         </div>
         <div className="shop__cards">

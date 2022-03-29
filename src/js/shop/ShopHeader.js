@@ -6,7 +6,7 @@ import React from "react";
 import shopHeader from "../../../assets/shopHeader.png"
 
  const ShopHeader = () => {
-    return <header class="shop__header">
+    return <header className="shop__header">
         
         {/* <img src={ homeJersey } alt="home jersey" class="shop__homeJersey"/>
         <img src={ awayJersey } alt="away jersey" class="shop__awayJersey"/>

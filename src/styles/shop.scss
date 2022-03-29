@@ -2,6 +2,7 @@
 
 
 .shop{
+    padding-bottom: 2rem;
     font-family: $font-family;
     &__header{
         width: 100%;
@@ -48,7 +49,7 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 5rem;
-        gap: 3.7rem;
+        gap: 4%;
     }
     &__cardsWrapper{
         width: 48%;
@@ -56,7 +57,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 3.7rem;
+        gap: 7%;
     }
     &__card{
         width: 46%;

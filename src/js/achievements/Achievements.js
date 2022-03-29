@@ -7,7 +7,7 @@ import AchievementsCard from "./AchievementsCard"
 
 
 const Achievements = () => {
-    return <section class="achievements">
+    return <section className="achievements">
         <AchievementsSlider/>
         <AchievementsCard/>
     </section>

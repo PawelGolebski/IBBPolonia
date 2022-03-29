@@ -9,7 +9,7 @@ const Games = () => {
     return <section className='games'> 
     
      
-    <img src={ backgroundImage } alt="background layer" class="games__background"/>
+    <img src={ backgroundImage } alt="background layer" className="games__background"/>
     <div className='container'>
         <Cards/>
         <NextGame/>

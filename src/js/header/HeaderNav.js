@@ -16,7 +16,7 @@ const HeaderNav = () => {
         <a href="#" className="nav__link">bilety</a>
         <a href="#" className="nav__link">reklama</a>
         <img src={ loupeIcon } alt="search icon" style={{cursor: "pointer"}}/>
-        <a class="nav__flag" href="https://www.ibb.uk/">
+        <a className="nav__flag" href="https://www.ibb.uk/">
             <img src={ flagEN } alt="Great Britain flag" ></img>
         </a>
     </nav>
