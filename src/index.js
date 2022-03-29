@@ -13,6 +13,8 @@ import Media from './js/media/Media'
 import Tv from './js/tv/Tv'
 import Shop from './js/shop/Shop'
 import Sponsors from './js/sponsors/sponsors'
+import Newsletter from './js/newsletter/Newsletter'
+import Footer from './js/footer/Footer'
 
 
 
@@ -30,6 +32,8 @@ const App = () => {
     <Tv/>
     <Shop />
     <Sponsors />
+    <Newsletter />
+    <Footer />
     </>
 }
 

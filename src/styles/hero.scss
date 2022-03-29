@@ -1,7 +1,7 @@
 @import "variables.scss";
 .hero {
     position: relative;
-    padding-top: 210px;
+    // padding-top: 210px;
     background-color: $color-background;
     max-width: 1920px;
     .container {
@@ -27,8 +27,11 @@
         height: 725px;
         position: absolute;
         background-image: url("../../assets/backgroundImage.png");
-        top: 0;
-        right: -23.7rem;
+        top: -20rem;
+        right: 0;
+        background-position: 25rem 0;
+        background-repeat: no-repeat;
+        z-index: 101;
     }
 }
 

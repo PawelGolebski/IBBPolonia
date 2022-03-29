@@ -1,7 +1,7 @@
 import React from 'react'
 //Assets
-import heroPlayer from '../../../assets/heroPlayer.png'
-import backgroundImage from '../../../assets/backgroundImage.png'
+// import heroPlayer from '../../../assets/heroPlayer.png'
+// import backgroundImage from '../../../assets/backgroundImage.png'
 
 const Hero = () => {
     return <section className="hero">
@@ -21,7 +21,7 @@ const Hero = () => {
     </div>
     <div className="hero__image"> </div>
 
-    {/* <div className="hero__background"></div> */}
+    <div className="hero__background"></div>
 </section>
 }
 
