@@ -1,132 +1,141 @@
 @import "variables.scss";
 
-
-
-.news {
-    width: 100%;
-    // min-height: 60rem;
-    background-color: #FFF;
-    &__header {
-        height: 200px;
+@media #{ $screen__s }{
+    .news {
         width: 100%;
-        background-position: right;
-        background-size: contain;
-        background-image: url("../../assets/newsHeader.png");
-        .container {
+        // min-height: 60rem;
+        background-color: #FFF;
+        &__header {
+            height: 200px;
+            width: 100%;
+            background-position: right;
+            background-size: contain;
+            background-image: url("../../assets/newsHeader.png");
+            .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                h2 {
+                    font-family: $font-family;
+                    font-size: 2.5rem;
+                    line-height: 5rem;
+                    font-weight: 300;
+                    text-transform: capitalize;
+                    color: #FFF;
+                    margin-top: 1rem;
+                }
+                h2::first-letter {
+                    font-size: 3.75rem;
+                }
+                a {
+                    text-decoration: none;
+                    font-family: $font-family;
+                    font-size: 1rem;
+                    line-height: 21px;
+                    color: $color-primary;
+                    margin-top: 2.8rem;
+                }
+            }
+        }
+    
+        &__cards{
+            width: 100%;
+            // height: 27rem;
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            h2 {
-                font-family: $font-family;
-                font-size: 2.5rem;
-                line-height: 5rem;
-                font-weight: 300;
-                text-transform: capitalize;
-                color: #FFF;
+            justify-content: center;
+            align-items: center;
+            transform: translate( 0, -5.5rem);
+            
+            flex-flow: row wrap;
+            
+            
+        }
+        &__cardsWrapper{
+            height: 27rem;
+            width: 50% ;
+            min-width: 800px;
+            display: flex;
+            justify-content: center;
+            gap: 4%;
+            margin-bottom: 2rem;
+        }
+        &__card{
+            font-family: $font-family;
+            width: 24.5rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: relative;
+            box-shadow: 0px 16px 21px -6px rgba(177, 177, 177, 1);
+        }
+        &__ad{
+            display: none;
+        }
+    
+        &Card{
+            &__photo{
+                width: 100%;
+                height: 13.1rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &__date{
+                width: 3.75rem;
+                height: 3.75rem;
+                color: $color-primary;
+                font-size: 1rem;
+                font-weight: 700;
+                line-height: 1.5rem;
+                background-color: #FFF;
+                position: absolute;
+                top: 9.37rem;
+                padding: 0.56rem 1.1rem;
+                &::first-line{
+                    color: black;
+                    font-weight: 300;
+                }
+    
+            }
+            &__category{
+                width: 90%;
+                color: $color-grey;
+                font-size: 0.75rem;
+                margin: 0 auto;
                 margin-top: 1rem;
             }
-            h2::first-letter {
-                font-size: 3.75rem;
+            &__title{
+                font-size: 1.1rem;
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 0.9rem;
             }
-            a {
-                text-decoration: none;
-                font-family: $font-family;
-                font-size: 1rem;
-                line-height: 21px;
-                color: $color-primary;
-                margin-top: 2.8rem;
+            &__description{
+                font-size: 1.1rem;
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 0.9rem;
+                color: $color-grey;
             }
         }
     }
+}
 
-    &__cards{
-        width: 100%;
-        // height: 27rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transform: translate( 0, -5.5rem);
-        
-        flex-flow: row wrap;
-        
-        
-    }
-    &__cardsWrapper{
-        height: 27rem;
-        width: 50% ;
-        min-width: 800px;
-        display: flex;
-        justify-content: center;
-        gap: 4%;
-        margin-bottom: 2rem;
-    }
-    &__card{
-        font-family: $font-family;
-        width: 24.5rem;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        position: relative;
-        box-shadow: 0px 16px 21px -6px rgba(177, 177, 177, 1);
-    }
-    &__ad{
-        display: block;
-        width: 100%;
-        height: 12.5rem;
-        margin-top: 3.75rem;
-        transform: translate( 0, -6rem);
-        img{
+@media #{ $screen__m}{
+    .news{
+        &__ad{
+            display: block;
             width: 100%;
-            height: auto;
-        }
-    }
-
-    &Card{
-        &__photo{
-            width: 100%;
-            height: 13.1rem;
+            height: 12.5rem;
+            margin-top: 3.75rem;
+            transform: translate( 0, -6rem);
             img{
                 width: 100%;
-                height: 100%;
+                height: auto;
             }
-        }
-        &__date{
-            width: 3.75rem;
-            height: 3.75rem;
-            color: $color-primary;
-            font-size: 1rem;
-            font-weight: 700;
-            line-height: 1.5rem;
-            background-color: #FFF;
-            position: absolute;
-            top: 9.37rem;
-            padding: 0.56rem 1.1rem;
-            &::first-line{
-                color: black;
-                font-weight: 300;
-            }
-
-        }
-        &__category{
-            width: 90%;
-            color: $color-grey;
-            font-size: 0.75rem;
-            margin: 0 auto;
-            margin-top: 1rem;
-        }
-        &__title{
-            font-size: 1.1rem;
-            width: 90%;
-            margin: 0 auto;
-            margin-top: 0.9rem;
-        }
-        &__description{
-            font-size: 1.1rem;
-            width: 90%;
-            margin: 0 auto;
-            margin-top: 0.9rem;
-            color: $color-grey;
         }
     }
+    
 }

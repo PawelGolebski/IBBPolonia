@@ -12,7 +12,7 @@ const HeaderLinks = () => {
             <HeaderMedia/>
         </div>
         <HeaderNav/>
-
+        
     </div>
     
 }

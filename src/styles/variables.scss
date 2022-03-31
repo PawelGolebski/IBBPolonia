@@ -4,3 +4,11 @@ $color-grey: #cdcdcd;
 $color-secondary: #2195C8;
 $font-family: 'Inter',
 sans-serif;
+
+// media
+
+$screen__xs: "only screen and (max-width: 620px)";
+$screen__s: "only screen and (min-width: 100px)";
+$screen__m: "only screen and (min-width: 768px)";
+$screen__l: "only screen and (min-width: 992px)";
+$screen__xl: "only screen and (min-width: 1200px)";

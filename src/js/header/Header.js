@@ -2,6 +2,7 @@ import React from "react";
 
 import HeaderLogos from './HeaderLogos'
 import HeaderLinks from "./HeaderLinks";
+import HeaderMobileNav from "./HeaderMobileNav";
 
 
 const Header = () => {
@@ -9,7 +10,9 @@ const Header = () => {
         <div className="container">
         <HeaderLogos/>
         <HeaderLinks/>
+        
         </div>
+        <HeaderMobileNav />
     </header>
 }
 

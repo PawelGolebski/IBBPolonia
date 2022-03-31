@@ -37,6 +37,7 @@
     },
     "dependencies": {
         "clean-webpack-plugin": "^4.0.0",
+        "hamburgers": "^1.2.1",
         "hot-module-replacement": "^3.0.4",
         "react": "^16.11.0",
         "react-dom": "^16.11.0"
