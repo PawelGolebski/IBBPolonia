@@ -1,133 +1,164 @@
 @import "variables.scss";
 
-
-.shop{
-    padding-bottom: 2rem;
-    font-family: $font-family;
-    &__header{
-        width: 100%;
-        // height: auto;
-        
-        img{
+@media #{ $screen__s }{
+    .shop{
+        padding-bottom: 2rem;
+        font-family: $font-family;
+        &__header{
             width: 100%;
-            height: auto;
-        }
-    }
-    &__info{
-        margin-top: 3rem;
-        width: 100%;
-        height: 3.75rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        a {
-            text-decoration: none;
-            font-family: $font-family;
-            font-size: 1rem;
-            line-height: 21px;
-            color: $color-primary;
-            margin-top: 2.8rem;
-            padding-bottom: 2rem;
-        }
-    }
-    &__title{
-        font-size: 2.5rem;
-        line-height: 5rem;
-        font-weight: 300;
-        text-transform: capitalize;
-        
-        color: $color-secondary;
-        &:first-letter {
-            font-size: 3.75rem;
-        }
-    }
-
-    &__cards{
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 5rem;
-        gap: 4%;
-    }
-    &__cardsWrapper{
-        width: 48%;
-        min-width: 26.25rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 7%;
-    }
-    &__card{
-        width: 46%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-    &Card{
-        &__photo{
-            width: 100%;
-            height: 62%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            // height: auto;
+            
             img{
                 width: 100%;
                 height: auto;
             }
         }
-        &__title{
-            font-size: 1.25rem;
-            font-weight: 700;
-            margin-bottom: 1.2rem;
-        }
-        &__description{
-            font-size: 0.9rem;
-            margin-bottom: 1.2rem;
-        }
-        &__status{
+        &__info{
+            margin-top: 3rem;
+            width: 100%;
+            height: 3.75rem;
             display: flex;
-            flex-flow: row wrap;
-            font-size: 0.9rem;
-            margin-bottom: 1.2rem;
-            gap: 0.5rem;
-            p:nth-child(2){
-                color: #209803;
-                font-weight: 700;
-            }
-        }
-        &__price{
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: flex-start;
-            align-items: flex-end;
-            font-size: 1.2rem;
-            font-weight: 700;
-            margin-bottom: 1.2rem;
-            gap: 0.5rem;
-            p:nth-child(1){
-                padding-bottom: 0.3rem;
-            }
-            p:nth-child(2){
-                color: #209803;
-                font-size: 2.5rem;
+            justify-content: space-between;
+            align-items: center;
+            a {
+                text-decoration: none;
+                font-family: $font-family;
+                font-size: 1rem;
+                line-height: 21px;
                 color: $color-primary;
+                margin-top: 2.8rem;
+                padding-bottom: 2rem;
             }
         }
-        &__button{
-            align-self: flex-end;
-            display: flex;  
-            width: 12rem;
-            height: 2.5rem;
+        &__title{
+            font-size: 2.5rem;
+            line-height: 5rem;
+            font-weight: 300;
+            text-transform: capitalize;
+            
+            color: $color-secondary;
+            &:first-letter {
+                font-size: 3.75rem;
+            }
+        }
+    
+        &__cards{
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
             justify-content: center;
             align-items: center;
-            text-decoration: none;
-            color: #FFF;
-            background-color: $color-secondary;
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
+            margin-bottom: 5rem;
+            gap: 4%;
+        }
+        &__cardsWrapper{
+            width: 48%;
+            min-width: 26.25rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 7%;
+        }
+        &__card{
+            width: 46%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        &Card{
+            &__photo{
+                width: 100%;
+                height: 62%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            &__title{
+                font-size: 1.25rem;
+                font-weight: 700;
+                margin-bottom: 1.2rem;
+            }
+            &__description{
+                font-size: 0.9rem;
+                margin-bottom: 1.2rem;
+            }
+            &__status{
+                display: flex;
+                flex-flow: row wrap;
+                font-size: 0.9rem;
+                margin-bottom: 1.2rem;
+                gap: 0.5rem;
+                p:nth-child(2){
+                    color: #209803;
+                    font-weight: 700;
+                }
+            }
+            &__price{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+                align-items: flex-end;
+                font-size: 1.2rem;
+                font-weight: 700;
+                margin-bottom: 1.2rem;
+                gap: 0.5rem;
+                p:nth-child(1){
+                    padding-bottom: 0.3rem;
+                }
+                p:nth-child(2){
+                    color: #209803;
+                    font-size: 2.5rem;
+                    color: $color-primary;
+                }
+            }
+            &__button{
+                align-self: flex-end;
+                display: flex;  
+                width: 12rem;
+                height: 2.5rem;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: #FFF;
+                background-color: $color-secondary;
+                font-size: 0.9rem;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
+
+
+
+@media #{ $screen__xs }{
+    .shop{
+        &__headerImg{
+            display: none;
+        }
+        &__info{
+            flex-wrap: wrap;
+            margin: 0;
+            margin-bottom: 2rem;
+        }
+        &__cardsWrapper{
+            flex-direction: column;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+    @media only screen and (max-width: 442px){
+        .shop{
+            &__info{
+                height: 8rem;
+                justify-content: center; 
+                line-height: 4rem;  
+                text-align: center;
+            }
         }
     }
 }
@@ -162,72 +193,3 @@
 
 
 
-// .shop {
-//     width: 100%;
-//     min-height: 90rem;
-//     &__header {
-//         position: relative;
-//         width: 100%;
-//         height: 35rem;
-//         background-image: url("https://drive.google.com/uc?id=19OdoIUGkJaSxNv6yH5SajPNEJra-OslY");
-//         h1 {
-//             // mix-blend-mode
-//             // color: transparent;
-//             // color: rgba(0, 0, 0, 0.9);
-//             font-family: $font-family;
-//             font-size: 7.6rem;
-//             font-weight: 700;
-//             line-height: 10rem;
-//             text-transform: uppercase;
-//             text-shadow: 2px 2px 0 #FFF, 2px -2px 0 #FFF, -2px 2px 0 #FFF, -2px -2px 0 #FFF, 2px 0px 0 #FFF, 0px 2px 0 #FFF, -2px 0px 0 #FFF, 0px -2px 0 #FFF;
-//             position: absolute;
-//             bottom: 2.8rem;
-//             left: 41.5rem;
-//         }
-//     }
-//     &__homeJersey {
-//         width: 38.5rem;
-//         height: 38.5rem;
-//         position: absolute;
-//         bottom: -1rem;
-//         left: -5rem;
-//     }
-//     &__awayJersey {
-//         width: 37rem;
-//         height: 37rem;
-//         position: absolute;
-//         bottom: -3.2rem;
-//         left: 7.4rem;
-//     }
-//     &__clubLogo {
-//         height: 18rem;
-//         width: 18rem;
-//         position: absolute;
-//         top: 2.7rem;
-//         left: 67.5rem;
-//     }
-//     &__info {
-//         width: 100%;
-//         height: 6rem;
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//         font-family: $font-family;
-//         margin-top: 1.8rem;
-//     }
-//     &__title {
-//         font-size: 2.5rem;
-//         font-weight: 300;
-//         color: $color-secondary;
-//         text-transform: uppercase;
-//         &::first-letter {
-//             font-size: 3.75rem;
-//         }
-//     }
-//     a {
-//         text-decoration: none;
-//         font-size: 1rem;
-//         color: $color-primary;
-//         line-height: 1, 3rem;
-//     }
-// }

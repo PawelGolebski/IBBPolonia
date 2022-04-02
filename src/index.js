@@ -26,7 +26,7 @@ const App = () => {
     <Games/>
     <Club />
     <Achievements/>
-    <Team/>
+    {/* <Team/> */}
     <News/>
     <Media />
     <Tv/>

@@ -1,69 +1,97 @@
 @import "variables.scss";
 
 
-.media{
-    &__header{
-        width: 100%;
-        // height: 10rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        font-family: $font-family;
-    
-    }
-    &Header{
-        &__title{
-            display: block;
-            width: 30rem;
-            font-size: 2.5rem;
-            font-weight: 300;
-            color: $color-secondary;
-            line-height: 5rem;
-            &::first-letter{
-                font-size: 3.75rem;
-                font-weight: 300;
-            }
-        }
-        &__buttonsWraper{
-            width: 26rem;
-            height: 3.1rem;
+@media #{ $screen__s }{
+    .media{
+        &__header{
+            width: 100%;
+        
             display: flex;
-            flex-flow: row;
-            justify-content: center;
-            gap: 1.5rem;
-        }
-        &__buttons{
-            width: 56rem;
-            // height: 3.1rem;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: flex-end;
+            flex-direction: row;
+            justify-content: space-between;
             align-items: center;
-            gap: 1.5rem;
+            font-family: $font-family;
         
         }
-        &__button{
-            display: block;
-            width: 12.5rem;
-            height: 3.1rem;
-                img {
-                    width: 100%;
-                    height: 100%;
+        &Header{
+            &__title{
+                display: block;
+                width: 30rem;
+                font-size: 2.5rem;
+                font-weight: 300;
+                color: $color-secondary;
+                line-height: 5rem;
+                &::first-letter{
+                    font-size: 3.75rem;
+                    font-weight: 300;
                 }
-        }
-
-    }
-
-    &__gallery{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-        justify-content: center;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-    }
+            }
+            &__buttonsWraper{
+                width: 26rem;
+                display: flex;
+                flex-flow: row;
+                justify-content: center;
+                gap: 1.5rem;
+            }
+            &__buttons{
+                width: 56rem;
+                // height: 3.1rem;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 1.5rem;
+            
+            }
+            &__button{
+                display: block;
+                width: 12.5rem;
+                height: 3.1rem;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+            }
     
+        }
+    
+        &__gallery{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+    }
+}
+
+
+@media #{ $screen__xs}{
+    .media{
+        &__header{
+            flex-direction: column;
+            gap: 3rem;
+            
+        }
+        &Header__title{
+            width: 100%;
+            text-align: center;
+        }
+        &Header__buttons{
+            width: 100%;
+            flex-direction: column;
+        }
+        &Header__buttonsWraper{
+            width: 100%;
+            flex-flow: row wrap;
+            
+        }
+    }
+
+    
+
 }
